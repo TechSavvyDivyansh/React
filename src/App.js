@@ -8,6 +8,7 @@ import ShopCategory from './pages/ShopCategory.jsx';
 import Product from './pages/Product.jsx'
 import Cart from './pages/Cart.jsx'
 import LoginSignup from './pages/LoginSignUp.jsx'
+import Footer from './components/Footer/Footer.jsx';
 
 
 
@@ -29,7 +30,7 @@ function App()
                 <Route path='/login' element={<LoginSignup />}/>
 
             </Routes>
-
+            <Footer/>
         </BrowserRouter>
     </div>
   );
