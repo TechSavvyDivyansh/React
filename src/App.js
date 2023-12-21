@@ -3,29 +3,30 @@ import './App.css';
 import Navbar from './components/navbar/navbar.jsx';
 
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
-import shop from './pages/shop.jsx';
-import shopCategory from './pages/shopCategory.jsx';
-import product from './pages/product.jsx'
-import cart from './pages/cart.jsx'
-import loginSignup from './pages/loginSignUp.jsx'
+import Shop from './pages/Shop.jsx';
+import ShopCategory from './pages/ShopCategory.jsx';
+import Product from './pages/Product.jsx'
+import Cart from './pages/Cart.jsx'
+import LoginSignup from './pages/LoginSignUp.jsx'
 
 
 
-function App() {
+function App() 
+{
   return (
     <div>
         <BrowserRouter>
             <Navbar />
             <Routes>
-                <Route path='/' element={<shop />} />
-                <Route path='/Men' element={<shopCategory category='Men' />} />
-                <Route path='/Women' element={<shopCategory category='Women' />} />
-                <Route path='/Kids' element={<shopCategory category='Kids' />} />
-                <Route path='/product' element={<product />}>
-                    <Route path=':productId' element={<product />}/>
+                <Route path='/' element={<Shop />} />
+                <Route path='/Men' element={<ShopCategory category='Men' />} />
+                <Route path='/Women' element={<ShopCategory category='Women' />} />
+                <Route path='/Kids' element={<ShopCategory category='Kids' />} />
+                <Route path='/Product' element={<Product />}>
+                    <Route path=':productId' element={<Product />}/>
                 </Route>
-                <Route path='/cart' element={<cart />}/>
-                <Route path='/login' element={<loginSignup />}/>
+                <Route path='/Cart' element={<Cart />}/>
+                <Route path='/login' element={<LoginSignup />}/>
 
             </Routes>
 
