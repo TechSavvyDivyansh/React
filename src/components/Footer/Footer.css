@@ -42,7 +42,7 @@
 {
     padding: 10px;
     padding-bottom: 6px;
-    background: #fbfbfb;
+    background:linear-gradient(180deg,#fde1ff 0%,#e1ffea22 60%);
     border: 1px solid #ebebeb;
 }
 
